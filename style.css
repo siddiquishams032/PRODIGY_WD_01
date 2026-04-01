@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+}
+
+/* Menu */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover effect (underline animation) */
+#navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#navbar ul li a:hover {
+    color: #007BFF;
+}
+
+/* Scroll effect */
+.scrolled {
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.scrolled a {
+    color: white !important;
+}
+
+/* Content section */
+.content {
+    height: 200vh;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+.content p {
+    color: #666;
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+}
